@@ -1,0 +1,6 @@
+<div class="choices">
+	<div class="option" ng-repeat="option in cur.options">
+	<label for="{{option.ident}}">{{option.text}}</label>
+		<input id="{{option.ident}}" ng-model="cur.answer[option.ident]" type="checkbox"/>
+	</div>
+</div>

@@ -1,3 +1,4 @@
 <div class="questionnaire">
-	
+	<input type="file" filelist-bind name="files" ng-hide="questionnaireIsReady()"/>
+	<button ui-sref="question({Id:0})" data-ng-disabled="!questionnaireIsReady()">Start Questionnaire</button>
 </div>

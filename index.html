@@ -5,11 +5,19 @@
 	<script src="build/js/lib/angular/angular.js" type="text/javascript"></script>
 	<script src="build/js/lib/angular-ui/build/angular-ui.min.js" type="text/javascript"></script>
 	<script src="build/js/lib/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+	<script src="build/js/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="build/js/lib/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
 	<script src="build/js/app/SSWebApp.min.js" type="text/javascript"></script>
+
+	<link href="build/js/lib/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<link href="build/js/lib/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<div ui-view ng-controller="surveyCtrl">
-		<div questionnaire></div>
+	<div ng-controller="surveyCtrl">
+		<h1>{{questionnaire.title}}</h1>
+		<div ui-view>
+			<div questionnaire></div>
+		</div>
 	</div>
 </body>
 </html>

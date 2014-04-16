@@ -1,3 +1,18 @@
 <div class="question">
-	
+<h2>{{cur.text}}</h2>
+	<div ng-switch on="cur.type">
+		<div ng-switch-when="choices" choices></div>
+		<div ng-switch-when="date" date></div>
+		<div ng-switch-when="dateRange" daterange></div>
+		<div ng-switch-when="range" floatrange></div>
+		<div ng-switch-when="text" text></div>
+		<div ng-switch-when="time" time></div>
+		<div ng-switch-when="timeRange" timerange></div>
+		<div ng-switch-default notype></div>
+	</div>
+	<div class="controls">
+		<button type="button" ui-sref="question({Id:previousId})">Previous</button>
+		<button type="button" ui-sref="question({Id:nextId})">Next</button>
+		<button type="button" ui-sref="question({Id:nextId})">Skip</button>
+	</div>
 </div>
