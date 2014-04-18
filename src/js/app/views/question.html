@@ -1,18 +1,25 @@
 <div class="question">
-	<h2>{{cur.text}}</h2>
-	<div ng-switch on="cur.type">
-		<div ng-switch-when="choices" choices></div>
-		<div ng-switch-when="date" date></div>
-		<div ng-switch-when="dateRange" daterange></div>
-		<div ng-switch-when="range" floatrange></div>
-		<div ng-switch-when="text" text></div>
-		<div ng-switch-when="time" time></div>
-		<div ng-switch-when="timeRange" timerange></div>
-		<div ng-switch-default notype></div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h2>{{cur.text}}</h2>
+		</div>
+		<div class="panel-body">
+			<div ng-switch on="cur.type">
+				<div ng-switch-when="choices" choices></div>
+				<div ng-switch-when="date" date></div>
+				<div ng-switch-when="dateRange" daterange></div>
+				<div ng-switch-when="range" floatrange></div>
+				<div ng-switch-when="text" text></div>
+				<div ng-switch-when="time" time></div>
+				<div ng-switch-when="timeRange" timerange></div>
+				<div ng-switch-default notype></div>
+			</div>
+		</div>
 	</div>
 	<div class="controls">
-		<button type="button" ui-sref="question({Id:previousId})">Previous</button>
-		<button type="button" ui-sref="question({Id:nextId})">Next</button>
-		<button type="button" ui-sref="question({Id:nextId})">Skip</button>
+		<button type="button" class="btn btn-primary btn-lg" ui-sref="question({Id:previousId})" ng-show="hasPrevious()">Previous</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="cur.isAnswered=true" ng-disabled="!isValid()" ui-sref="question({Id:nextId})" ng-show="hasNext()">Next</button>
+		<button type="button" class="btn btn-primary btn-lg" ui-sref="question({Id:nextId})" ng-disabled="isRequired()" ng-show="hasNext()">Skip</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="submit()" ng-show="!hasNext()" ng-disabled="!isValid()">Submit Questionnaire</button>
 	</div>
 </div>

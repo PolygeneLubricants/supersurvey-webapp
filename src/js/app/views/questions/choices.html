@@ -1,6 +1,7 @@
 <div class="choices">
-	<div class="option" ng-repeat="option in cur.options">
-	<label for="{{option.ident}}">{{option.text}}</label>
-		<input id="{{option.ident}}" ng-model="cur.answer[option.ident]" type="checkbox"/>
+	<div class="option ck-btn" ng-repeat="option in cur.options">
+	<label for="{{option.ident}}">
+			<input id="{{option.ident}}" ng-model="cur.answer[option.ident]" type="checkbox"/><span>{{option.text}}</span>
+		</label>
 	</div>
 </div>

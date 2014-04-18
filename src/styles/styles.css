@@ -1,0 +1,68 @@
+.ck-btn {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #C9C9C9;
+    overflow:auto;
+}
+
+.ck-btn:hover {
+    background:#2971AF;
+}
+
+.ck-btn label {
+    margin: 0;
+    display: inline;
+}
+
+.ck-btn label span {
+    text-align:center;
+    padding:20px;
+    display:block;
+    font-weight: normal;
+
+}
+
+.ck-btn label input {
+    position:absolute;
+    top:-20px;
+}
+
+.ck-btn input:checked + span {
+    background-color:#428BCA;
+    color:#fff;
+}
+
+.controls {
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* RANGE INPUT */
+.float-range .range {
+    font-size: 40px;
+}
+
+.float-range .value {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    height: 60px;
+    border: 1px solid #2C359E;
+}
+.float-range .range .from {
+    float: left;
+    margin: 10px;
+    margin-left: 0;
+    padding: 15px;
+    width: 20%;
+}
+
+.float-range .range .to {
+    float: right;
+    margin: 10px;
+    margin-right: 0;
+    padding: 15px;
+    width: 20%;
+}

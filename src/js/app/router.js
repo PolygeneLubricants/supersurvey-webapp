@@ -4,4 +4,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			url: "/question/{Id}",
 			templateUrl: config.VIEW_URL + "/question.html"
 		})
+		.state("entryPoint", {
+			url: "/",
+			templateUrl: config.VIEW_URL + "/questionnaire.html"
+		})
 });

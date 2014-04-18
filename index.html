@@ -12,9 +12,11 @@
 
 	<link href="build/js/lib/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="build/js/lib/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+	<link href="build/styles/styles.css" type="text/css" rel="stylesheet" />
+	
 </head>
 <body>
-	<div ng-controller="surveyCtrl">
+	<div ng-controller="surveyCtrl" class="container">
 		<h1>{{questionnaire.title}}</h1>
 		<div ui-view>
 			<div questionnaire></div>
