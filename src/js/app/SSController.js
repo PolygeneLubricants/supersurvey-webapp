@@ -33,17 +33,15 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 					case "choices":
 					return {};
 					case "date":
-					return {};
+					return "";
 					case "dateRange":
-					return {};
+					return "";
 					case "range":
 					return 0;
 					case "text":
 					return "";
 					case "time":
-					return {};
-					case "timeRange":
-					return {};
+					return "";
 					default:
 					throw "Type not supported. " + type;
 				}

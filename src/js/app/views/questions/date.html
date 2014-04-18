@@ -1,8 +1,6 @@
 <div class="date">
-	<div class="input-group" datetimepicker>
-		<input type="text" ng-model="cur.answer" class="form-control"></input>
-		<span class="input-group-addon">
-			<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-		</span>
+	<div class="input-group date" datepicker data-date-format="DD/MM/YYYY">
+		<input type="text" class="form-control" ng-model="cur.answer"/>
+		<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
 	</div>
 </div>

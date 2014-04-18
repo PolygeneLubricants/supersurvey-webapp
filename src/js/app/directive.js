@@ -23,6 +23,58 @@ app.directive('questionnaire', function() {
 	};
 })
 
+.directive('datepicker', function() {
+	return {
+		link: function(scope, elem, attr) {
+			$(elem).datetimepicker({
+				pickTime: false
+			});
+			$(elem).datetimepicker().on("change",function(e){
+				scope.$apply(function() {
+					scope.cur.answer = elem.find('input').val(); // Bad hardcording. Would be better to get ng-model.
+				});
+			});
+		}
+	}
+})
+
+.directive('daterangepicker', function() {
+	return {
+		link: function(scope, elem, attr) {
+			$(elem).datetimepicker({
+				pickTime: false,
+				// The documentation for datetimepicker does not specify the format, but MM/DD/YYYY works..
+				// Would be awesome to at least throw an error on unreadable date.
+				minDate: moment.unix(scope.cur.from).format("MM/DD/YYYY"),
+				maxDate: moment.unix(scope.cur.to).format("MM/DD/YYYY")
+			});
+			$(elem).datetimepicker().on("change",function(e){
+				scope.$apply(function() {
+					scope.cur.answer = elem.find('input').val(); // Bad hardcording. Would be better to get ng-model.
+				});
+			});
+		}
+	}
+})
+
+.directive('timepicker', function() {
+	return {
+		link: function(scope, elem, attr) {
+			$(elem).datetimepicker({
+				format: 'HH:mm',
+				pickDate: false,
+				pickSeconds: false,
+				pick12HourFormat: false  
+			});
+			$(elem).datetimepicker().on("change",function(e){
+				scope.$apply(function() {
+					scope.cur.answer = elem.find('input').val(); // Bad hardcording. Would be better to get ng-model.
+				});
+			});
+		}
+	}
+})
+
 .directive('choices', function() {
 	return {
 		replace: true,
@@ -36,13 +88,6 @@ app.directive('questionnaire', function() {
 		replace: true,
 		restrict: 'A',
 		templateUrl: config.VIEW_URL + '/questions/date.html'
-	}
-})
-.directive('datetimepicker', function() {
-	return function(scope, elem, attr) {
-		$(elem).datetimepicker({
-			format: 'dd/MM/yyyy hh:mm:ss'
-		});
 	}
 })
 
@@ -78,13 +123,6 @@ app.directive('questionnaire', function() {
 	}
 })
 
-.directive('timerange', function() {
-	return {
-		replace: true,
-		restrict: 'A',
-		templateUrl: config.VIEW_URL + '/questions/timeRange.html'
-	}
-})
 .directive('notype', function() {
 	return {
 		replace: true,
