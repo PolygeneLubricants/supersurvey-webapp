@@ -3,26 +3,26 @@
     "options": [ { "ident":"1" , "text":"Male" } , { "ident":"2" , "text":"Female" } , { "ident":"3" , "text":"Other" } ]
     , "min":1, "max":1 } ,
      
-    { "ident":"color", "type":"choices" , "status":"required", "text":"What is your favorite colors?", 
+    { "ident":"color", "type":"choices" , "status":"excluded", "text":"What is your favorite colors?", 
     "options": [ { "ident":"1" , "text":"Blue" } , { "ident":"2" , "text":"Red" } , { "ident":"3" , "text":"Green" } , { "ident":"4" , "text":"Black" } , { "ident":"5" , "text":"White" } ]
     , "min":2, "max":4 } ,
 
-    { "ident":"age" , "type":"range" , "status":"required", "text":"What is your age?", 
+    { "ident":"age" , "type":"range" , "status":"optional", "text":"What is your age?", 
     "from":0.0 , "to":150.0 , "interval":1.0 } ,
 
 
     { "ident":"even" , "type":"range" , "status":"required" , "text":"Select an even number you like the most.", 
     "from":0.0, "to":150.0, "interval":2.0 } ,
 
-    { "ident":"poem" , "type":"text" , "status":"required" , "text":"You are a romantic person.\r\nWrite your favorit poem." } ,
+    { "ident":"poem" , "type":"text" , "status":"optional" , "text":"You are a romantic person.\r\nWrite your favorit poem." } ,
 
     { "ident":"birthday" , "type":"date" , "status":"required" , "text":"When is your next birthday?" } ,
 
     { "ident":"reunion" , "type":"dateRange" , "status":"required" , "text":"When should we hold the Reunion?",
     "from":"1397624312" , "to":"1397644312" } ,
     
-    { "ident":"waking" , "type":"time" , "status":"required" , "text":"When do you normally wake on work days?" } ,
+    { "ident":"waking" , "type":"time" , "status":"excluded" , "text":"When do you normally wake on work days?" } ,
 
-    { "ident":"meeting" , "type":"dateRange" , "status":"required" , "text":"At what time should we hold the meeting?",
+    { "ident":"meeting" , "type":"dateRange" , "status":"excluded" , "text":"At what time should we hold the meeting?",
     "from":"1397642112" , "to":"1397644312" } ]
 }

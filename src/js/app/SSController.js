@@ -7,6 +7,19 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 				return;
 
 			var id = parseInt($stateParams.Id);
+
+			if($scope.questionnaire.questions[id].isExcluded) {
+
+				// Check if there are any remaining questions who are not excluded. If true, got to that.
+				for(var i = id; i < $scope.questionnaire.questions.length - 1; i++) {
+					if(!$scope.questionnaire.questions[i].isExcluded) {
+						return $state.go('question', {Id:i});
+					}
+				}
+				// If no valid questions remain, step back one question and repeat until we reach a valid question.
+				return $state.go('question', {Id: id - 1});
+			}
+
 			$scope.questionId = id;
 			$scope.previousId = id - 1;
 			$scope.nextId = id + 1;
@@ -20,7 +33,6 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 			return $state.go('entryPoint');
 
 		$scope.cur;
-		$scope.questionnaire;
 	};
 
 	this.init();
@@ -52,6 +64,8 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 			}
 			question.answer = getAnswerType(question.type);
 			question.isAnswered = false;
+			question.isSkipped = false;
+			question.isExcluded = question.status === "excluded";
 		});
 		$scope.$digest();
 	},
@@ -71,12 +85,26 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 		$state.go('question', {Id:nextId});
 	},
 
+	$scope.previousQuestion = function(id) {
+		for(var i = id; i >= 0; i--) {
+			if(!$scope.questionnaire.questions[i].isExcluded) {
+				return $state.go('question', {Id: i});
+			}
+		}
+	}
+
+	$scope.skip = function(id) {
+		$scope.cur.isSkipped = true;
+		$state.go('question', {Id:nextId});
+	}
+
 	/* INPUT VALIDATION */
 	$scope.isValid = function() {
 		if(typeof $scope.cur === 'undefined')
 			return false;
 
 		if($scope.hasAnswer() && $scope.isWithinBoundaries()) {
+			$scope.cur.isAnswered = true;
 			return true;
 		} else {
 			return false;
@@ -129,13 +157,42 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 	$scope.hasPrevious = function() {
 		if(typeof $scope.cur === 'undefined')
 			return false;
-		return $scope.questionId > 0;
+		if($scope.questionId < 1)
+			return false;
+
+		for(var i = $scope.questionId - 1; i >= 0; i--) {
+			if(!$scope.questionnaire.questions[i].isExcluded) {
+				return true;
+			}
+		}
+
+		return false;
 	},
 
 	$scope.hasNext = function() {
 		if(typeof $scope.cur === 'undefined')
 			return false;
-		return $scope.questionId < ($scope.questionnaire.questions.length - 1);
+
+		if($scope.questionId === $scope.questionnaire.questions.length - 1)
+			return false;
+
+		for(var i = $scope.questionId + 1; i < $scope.questionnaire.questions.length - 1; i++) {
+			if(!$scope.questionnaire.questions[i].isExcluded) {
+				return true;
+			}
+		}
+		return false;
+	},
+
+	$scope.canSubmit = function() {
+		var canSubmit = true;
+		$scope.questionnaire.questions.forEach(function(q) {
+			if(q.status === "required") {
+				canSubmit &= q.isAnswered;
+			}
+		});
+
+		return canSubmit;
 	},
 
 	$scope.submitAnswers = function() {

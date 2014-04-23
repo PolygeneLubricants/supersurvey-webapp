@@ -17,9 +17,9 @@
 		</div>
 	</div>
 	<div class="controls">
-		<button type="button" class="btn btn-primary btn-lg" ui-sref="question({Id:previousId})" ng-show="hasPrevious()">Previous</button>
-		<button type="button" class="btn btn-primary btn-lg" ng-click="cur.isAnswered=true" ng-disabled="!isValid()" ui-sref="question({Id:nextId})" ng-show="hasNext()">Next</button>
-		<button type="button" class="btn btn-primary btn-lg" ui-sref="question({Id:nextId})" ng-disabled="isRequired()" ng-show="hasNext()">Skip</button>
-		<button type="button" class="btn btn-primary btn-lg" ng-click="submitAnswers()" ng-show="!hasNext()" ng-disabled="!isValid()">Submit Questionnaire</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="previousQuestion(previousId)" ng-show="hasPrevious()">Previous</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-disabled="!isValid()" ui-sref="question({Id:nextId})" ng-show="hasNext()">Next</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="skip(nextId)" ng-disabled="isRequired()" ng-show="hasNext()">Skip</button>
+		<button type="button" class="btn btn-primary btn-lg" ng-click="submitAnswers()" ng-disabled="!isValid()" ng-show="canSubmit()">Submit Questionnaire</button>
 	</div>
 </div>
