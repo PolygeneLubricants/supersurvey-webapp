@@ -1,4 +1,4 @@
-app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout', '$state', function($rootScope, $scope, $stateParams, $timeout, $state) {
+app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout', '$state', '$window', function($rootScope, $scope, $stateParams, $timeout, $state, $window) {
 
 	$scope.$on('$locationChangeSuccess', function(evt) {
 		$timeout(function() { // Timeout is used to wait for the angular cycle to finish. This avoids a race condition with stateparams.
@@ -136,5 +136,39 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 		if(typeof $scope.cur === 'undefined')
 			return false;
 		return $scope.questionId < ($scope.questionnaire.questions.length - 1);
+	},
+
+	$scope.submitAnswers = function() {
+		var subject = "Questionnaire \"" + $scope.questionnaire.title +"\" has been answered";
+		var answers = "";
+		$scope.questionnaire.questions.forEach(function(q) {
+			answers += "[" + q.ident + "]" + ": " + $scope.wrapAnswer(q) + "%0D%0A";
+		});
+		$window.location = "mailto:?subject=" + subject + "&body=" + answers + "";
+	},
+
+	$scope.wrapAnswer = function(question) {
+		switch(question.type) {
+			case "choices":
+			var choiceString = "";
+			for(var a in question.answer) {
+				if(question.answer[a])
+					choiceString += a + ",";
+			}
+
+			return choiceString.substring(0, choiceString.length - 1); // Remove trailing comma.
+			case "date":
+			return question.answer;
+			case "dateRange":
+			return question.answer;
+			case "range":
+			return question.answer;
+			case "text":
+			return question.answer.replace(/\r?\n/g, '%0D%0A');
+			case "time":
+			return question.answer;
+			default:
+			return "";
+		}
 	}
 }]);
