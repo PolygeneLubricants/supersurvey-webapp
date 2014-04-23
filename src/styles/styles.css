@@ -50,6 +50,7 @@
     display: block;
     height: 60px;
     border: 1px solid #2C359E;
+    width: 50%;
 }
 .float-range .range .from {
     float: left;
@@ -65,4 +66,27 @@
     margin-right: 0;
     padding: 15px;
     width: 20%;
+}
+
+/* PROGRESS BAR */
+.progress {
+    margin-top: 20px;
+}
+.progress-bar-current {
+    background: #428bca;
+}
+
+.progress-bar-default {
+    background: none;
+}
+
+.progress-question {
+    height: inherit;
+    float: left;
+}
+
+.progress-bar {
+    float: none;
+    width: auto;
+    border-radius: 4px;
 }

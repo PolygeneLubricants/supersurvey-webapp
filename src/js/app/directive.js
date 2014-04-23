@@ -136,7 +136,8 @@ app.directive('questionnaire', function() {
 		restrict: 'E',
 		templateUrl: config.VIEW_URL + '/progressbar.html',
 		scope: {
-			questions: "="
+			questions: "=",
+			cur: "="
 		},
 		controller: "progressbarCtrl"
 	}

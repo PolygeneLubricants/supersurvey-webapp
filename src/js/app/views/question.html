@@ -3,7 +3,7 @@
 		<div class="panel-heading">
 			<h2>{{cur.text}}</h2>
 		</div>
-		<progressbar questions="questionnaire.questions"></progressbar>
+		<progressbar questions="questionnaire.questions" cur="cur"></progressbar>
 		<div class="panel-body">
 			<div ng-switch on="cur.type">
 				<div ng-switch-when="choices" choices></div>

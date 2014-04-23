@@ -43,6 +43,7 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 	},
 	$scope.loadQuestionnaire = function(rawText) {
 		$scope.questionnaire = JSON.parse(rawText);
+		var i = 0;
 		$scope.questionnaire.questions.forEach(function(question) {
 			function getAnswerType(type) {
 				switch(type) {
@@ -62,6 +63,8 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 					throw "Type not supported. " + type;
 				}
 			}
+			question.Id = i;
+			i++;
 			question.answer = getAnswerType(question.type);
 			question.isAnswered = false;
 			question.isSkipped = false;
@@ -95,7 +98,7 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 
 	$scope.skip = function(id) {
 		$scope.cur.isSkipped = true;
-		$state.go('question', {Id:nextId});
+		$state.go('question', {Id:$scope.nextId});
 	}
 
 	/* INPUT VALIDATION */
@@ -105,8 +108,10 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 
 		if($scope.hasAnswer() && $scope.isWithinBoundaries()) {
 			$scope.cur.isAnswered = true;
+			$scope.cur.isSkipped = false;
 			return true;
 		} else {
+			$scope.cur.isAnswered = false;
 			return false;
 		}
 	},
