@@ -1,0 +1,18 @@
+<div class="progress" style="margin-top: 20px">
+	<div ng-repeat="question in questions" ng-hide="question.status === 'excluded' " style="height: inherit; float: left; width: {{100 / numOfIncludedQuestions(questions)}}%">
+		<div ng-switch on="questionStatus(question)" style="height: inherit; float: left;width:100%">
+			<div ng-switch-when="skipped" class="progress-bar" style="width:100%; background-color: DimGray">
+	    		<span class="sr-only">skipped</span>
+	    	</div>
+			<div ng-switch-when="included-unanswered" class="progress-bar" style="width:100%; background-color: #eee ">
+	    		<span class="sr-only">included-unanswered</span>
+	    	</div>
+	    	<div ng-switch-when="included-answered" class="progress-bar" style="width:100%; background-color: #428bca; ">
+	    		<span class="sr-only">included-answered</span>
+	    	</div>
+	    	<div ng-switch-when="excluded" class="progress-bar" style="width:100%; background-color: #d9534f; ">
+	    		<span class="sr-only">excluded</span>
+	    	</div>
+    	</div>
+  	</div>
+</div>

@@ -2,8 +2,7 @@
     { "ident":"gender" , "type":"choices" , "status":"required" , "text":"What is your gender?" ,  
     "options": [ { "ident":"1" , "text":"Male" } , { "ident":"2" , "text":"Female" } , { "ident":"3" , "text":"Other" } ]
     , "min":1, "max":1 } ,
-     
-    { "ident":"color", "type":"choices" , "status":"excluded", "text":"What is your favorite colors?", 
+    { "ident":"color", "type":"choices" , "status":"optional", "text":"What is your favorite colors?", 
     "options": [ { "ident":"1" , "text":"Blue" } , { "ident":"2" , "text":"Red" } , { "ident":"3" , "text":"Green" } , { "ident":"4" , "text":"Black" } , { "ident":"5" , "text":"White" } ]
     , "min":2, "max":4 } ,
 
@@ -16,7 +15,7 @@
 
     { "ident":"poem" , "type":"text" , "status":"optional" , "text":"You are a romantic person.\r\nWrite your favorit poem." } ,
 
-    { "ident":"birthday" , "type":"date" , "status":"required" , "text":"When is your next birthday?" } ,
+    { "ident":"birthday" , "type":"date" , "status":"excluded" , "text":"When is your next birthday?" } ,
 
     { "ident":"reunion" , "type":"dateRange" , "status":"required" , "text":"When should we hold the Reunion?",
     "from":"1397624312" , "to":"1397644312" } ,

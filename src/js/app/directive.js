@@ -129,4 +129,16 @@ app.directive('questionnaire', function() {
 		restrict: 'A',
 		templateUrl: config.VIEW_URL + '/questions/notype.html'
 	}
-});
+})
+.directive('progressbar', function() {
+	return {
+		replace: true,
+		restrict: 'E',
+		templateUrl: config.VIEW_URL + '/progressbar.html',
+		scope: {
+			questions: "="
+		},
+		controller: "progressbarCtrl"
+	}
+})
+;
