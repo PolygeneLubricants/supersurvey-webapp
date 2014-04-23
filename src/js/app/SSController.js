@@ -105,14 +105,14 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 			case "text":
 			return true;
 			case "date":
-			return moment($scope.cur.answer).isValid();
+			return moment($scope.cur.answer, "DD-MM-YYYY").isValid();
 			case "dateRange":
-			var from = moment($scope.cur.from, 'DD-MM-YYYY');
-			var to = moment($scope.cur.to, 'DD-MM-YYYY');
-			var d = moment($scope.cur.answer);
+			var from = moment.unix($scope.cur.from).startOf('day');
+			var to = moment.unix($scope.cur.to).startOf('day');
+			var d = moment($scope.cur.answer, 'DD-MM-YYYY');
 			return d <= to && d >= from;
 			case "time":
-			throw "NOT IMPLEMENTED";
+			return moment($scope.cur.answer, "HH:mm").isValid();
 			default:
 			throw "Type not supported: " + $scope.cur.type;
 		}
