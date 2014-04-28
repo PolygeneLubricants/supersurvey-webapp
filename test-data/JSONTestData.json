@@ -1,27 +1,58 @@
-﻿{ "title":"TestQuestionnaire" , "questions": [
-    { "ident":"gender" , "type":"choices" , "status":"required" , "text":"What is your gender?" ,  
-    "options": [ { "ident":"1" , "text":"Male" } , { "ident":"2" , "text":"Female" } , { "ident":"3" , "text":"Other" } ]
-    , "min":1, "max":1 } ,
-    { "ident":"color", "type":"choices" , "status":"optional", "text":"What is your favorite colors?", 
-    "options": [ { "ident":"1" , "text":"Blue" } , { "ident":"2" , "text":"Red" } , { "ident":"3" , "text":"Green" } , { "ident":"4" , "text":"Black" } , { "ident":"5" , "text":"White" } ]
-    , "min":2, "max":4 } ,
-
-    { "ident":"age" , "type":"range" , "status":"optional", "text":"What is your age?", 
-    "from":0.0 , "to":150.0 , "interval":1.0 } ,
-
-
-    { "ident":"even" , "type":"range" , "status":"required" , "text":"Select an even number you like the most.", 
-    "from":0.0, "to":150.0, "interval":2.0 } ,
-
-    { "ident":"poem" , "type":"text" , "status":"optional" , "text":"You are a romantic person.\r\nWrite your favorit poem." } ,
-
-    { "ident":"birthday" , "type":"date" , "status":"excluded" , "text":"When is your next birthday?" } ,
-
-    { "ident":"reunion" , "type":"dateRange" , "status":"required" , "text":"When should we hold the Reunion?",
-    "from":"1397624312" , "to":"1397644312" } ,
-    
-    { "ident":"waking" , "type":"time" , "status":"excluded" , "text":"When do you normally wake on work days?" } ,
-
-    { "ident":"meeting" , "type":"dateRange" , "status":"excluded" , "text":"At what time should we hold the meeting?",
-    "from":"1397642112" , "to":"1397644312" } ]
+﻿{
+    "title":"myQuestionnaire" ,
+    "questions": [
+        { "ident":"birthday" , "status":"required" , "text":"When is your next birthday?" ,
+          "type":"date" } ,
+        { "ident":"reunion" , "status":"required" , "text":"When should we hold the Reunion?" ,
+          "type":"daterange" , "from":"1399507200" , "to":"1400198400" } ,
+        { "ident":"meeting" , "status":"optional" , "text":"At what time should we hold the meeting?" ,
+          "type":"time" } ,
+        { "ident":"poem" , "status":"required" , "text":"You are a romantic person, write your favorite poem." ,
+          "type":"text" } ,
+        { "ident":"age" , "status":"required" , "text":"What is your age?" ,
+          "type":"range" , "from":0 , "to":150 , "interval":1 } ,
+        { "ident":"even" , "status":"required" , "text":"Select an even number you like the most." ,
+          "type":"range" , "from":0 , "to":16 , "interval":2 } ,
+        { "ident":"rating" , "status":"required" , "text":"How would you rate this survey? (1: Bad, 5: Good)" ,
+          "type":"range" , "from":1 , "to":5 , "interval":1 } ,
+        { "ident":"nyancat" , "status":"required" , "text":"Have you heard of Nyan Cat?" ,
+          "type":"choices" ,
+          "min":1 , "max":1 ,
+          "options": [ { "ident":"1" , "text":"Yes" } ,
+                       { "ident":"2" , "text":"No" } ] } ,
+        { "ident":"color" , "status":"required" , "text":"What is your favorite colors?" ,
+          "type":"choices" ,
+          "min":2 , "max":4 ,
+          "options": [ { "ident":"1" , "text":"Blue" } ,
+                       { "ident":"2" , "text":"Red" } ,
+                       { "ident":"3" , "text":"Green" } ,
+                       { "ident":"4" , "text":"Black" } ,
+                       { "ident":"5" , "text":"White" } ,
+                       { "ident":"6" , "text":"Rainbow" } ] } ,
+        { "ident":"sport" , "status":"required" , "text":"What is your favorite sport?" ,
+          "type":"choices" ,
+          "min":1 , "max":1 ,
+          "options": [ { "ident":"1" , "text":"Football" } ,
+                       { "ident":"2" , "text":"Handball" } ,
+                       { "ident":"3" , "text":"Other" } ] } ,
+        { "ident":"football" , "status":"excluded" , "text":"Why is football so great?" ,
+          "type":"text" } ,
+        { "ident":"handball" , "status":"excluded" , "text":"Why is handball so great?" ,
+          "type":"text" } ,
+        { "ident":"otherSport" , "status":"excluded" , "text":"Please write your favorite sport." ,
+          "type":"text" } ,
+        { "ident":"otherSportRating" , "status":"excluded" , "text":"How do you like being an atypical dane?" ,
+          "type":"choices" ,
+          "min":1 , "max":1 ,
+          "options": [ { "ident":"1" , "text":"I love it!!!" } ,
+                       { "ident":"2" , "text":"It is good" } ,
+                       { "ident":"3" , "text":"It is ok" } ,
+                       { "ident":"4" , "text":"I do not like it" } ] }
+    ] ,
+    "rules": [ { "question_ident1":"nyancat" , "opt_answer_ident1":2 , "new_status":"excluded" , "question_ident2":"color" , "opt_answer_ident2":6 } ,
+               { "question_ident1":"sport" , "opt_answer_ident1":1 , "new_status":"required" , "question_ident2":"football" , "opt_answer_ident2":null } ,
+               { "question_ident1":"sport" , "opt_answer_ident1":2 , "new_status":"required" , "question_ident2":"handball" , "opt_answer_ident2":null } ,
+               { "question_ident1":"sport" , "opt_answer_ident1":3 , "new_status":"required" , "question_ident2":"otherSport" , "opt_answer_ident2":null } ,
+               { "question_ident1":"sport" , "opt_answer_ident1":3 , "new_status":"required" , "question_ident2":"otherSportRating" , "opt_answer_ident2":null }
+    ]
 }
