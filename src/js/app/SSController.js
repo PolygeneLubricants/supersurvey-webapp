@@ -117,6 +117,14 @@ $scope.nextQuestion = function() {
 	$state.go('question', {Id:nextId});
 },
 
+$scope.autoNext = function(isChecked) {
+	$timeout(function() {
+		if(!isChecked && $scope.cur.max === 1) {
+			$scope.nextQuestion();
+		}
+	});
+},
+
 $scope.previousQuestion = function(id) {
 	for(var i = id; i >= 0; i--) {
 		if(!$scope.questionnaire.questions[i].isExcluded) {
@@ -128,7 +136,7 @@ $scope.previousQuestion = function(id) {
 $scope.skip = function(id) {
 	$scope.cur.isSkipped = true;
 	$state.go('question', {Id:$scope.nextId});
-}
+},
 
 /* INPUT VALIDATION */
 $scope.isValid = function() {
