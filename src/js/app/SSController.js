@@ -92,9 +92,11 @@ $scope.loadQuestionnaire = function(rawText) {
 
 	$scope.$watch('cur.answer', function() {
 		$timeout(function() {
-			if(typeof $scope.cur !== 'undefined')
-				$scope.applyRulesByQuestion($scope.cur);
-		})
+			if(typeof $scope.cur === 'undefined')
+				return;
+
+			$scope.applyRulesByQuestion($scope.cur);
+		});
 	}, true);
 
 	$scope.$digest();
@@ -176,7 +178,17 @@ $scope.isWithinBoundaries = function() {
 		default:
 		throw "Type not supported: " + $scope.cur.type;
 	}
-}
+},
+
+$scope.maxReached = function() {
+	var choices = 0;
+	for(var a in $scope.cur.answer) {
+		if($scope.cur.answer[a])
+			choices++;
+	}
+
+	return choices >= $scope.cur.max;
+},
 
 /* END INPUT VALIDATION */
 /* NAVIGATION VALIDATION */

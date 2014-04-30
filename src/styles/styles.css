@@ -28,6 +28,11 @@
     top:-20px;
 }
 
+.ck-btn input:disabled + span {
+    background-color: #EEE;
+    color: #CCC;
+}
+
 .ck-btn input:checked + span {
     background-color:#428BCA;
     color:#fff;

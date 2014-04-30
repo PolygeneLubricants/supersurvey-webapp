@@ -1,7 +1,7 @@
 <div class="choices">
 	<div class="option ck-btn" ng-repeat="option in cur.options" ng-hide="option.isExcluded">
 	<label for="{{option.ident}}">
-			<input id="{{option.ident}}" ng-model="cur.answer[option.ident]" type="checkbox"/><span>{{option.text}}</span>
+			<input id="{{option.ident}}" ng-model="cur.answer[option.ident]" type="checkbox" ng-disabled="maxReached() && !cur.answer[option.ident]"/><span>{{option.text}}</span>
 		</label>
 	</div>
 </div>
