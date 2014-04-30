@@ -49,10 +49,25 @@
                        { "ident":"3" , "text":"It is ok" } ,
                        { "ident":"4" , "text":"I do not like it" } ] }
     ] ,
-    "rules": [ { "question_ident1":"nyancat" , "opt_answer_ident1":2 , "new_status":"excluded" , "question_ident2":"color" , "opt_answer_ident2":6 } ,
-               { "question_ident1":"sport" , "opt_answer_ident1":1 , "new_status":"required" , "question_ident2":"football" , "opt_answer_ident2":null } ,
-               { "question_ident1":"sport" , "opt_answer_ident1":2 , "new_status":"required" , "question_ident2":"handball" , "opt_answer_ident2":null } ,
-               { "question_ident1":"sport" , "opt_answer_ident1":3 , "new_status":"required" , "question_ident2":"otherSport" , "opt_answer_ident2":null } ,
-               { "question_ident1":"sport" , "opt_answer_ident1":3 , "new_status":"required" , "question_ident2":"otherSportRating" , "opt_answer_ident2":null }
+    "rules": [ { "trigger": { "question":"nyancat" , "answer":2 } ,
+                 "status":"excluded" ,
+                 "target":  { "question":"color" , "answer":6 }
+               } ,
+               { "trigger": { "question":"sport" , "answer":1 } ,
+                 "status":"required" ,
+                 "target":  { "question":"football" , "answer":null }
+               } ,
+               { "trigger": { "question":"sport" , "answer":2 } ,
+                 "status":"required" ,
+                 "target":  { "question":"handball" , "answer":null }
+               } ,
+               { "trigger": { "question":"sport" , "answer":3 } ,
+                 "status":"required" ,
+                 "target":  { "question":"otherSport" , "answer":null }
+               } ,
+               { "trigger": { "question":"sport" , "answer":3 } ,
+                 "status":"required" ,
+                 "target":  { "question":"otherSportRating" , "answer":null }
+               }
     ]
 }
