@@ -91,8 +91,10 @@ $scope.loadQuestionnaire = function(rawText) {
 	$scope.applyAllRules($scope.questionnaire.rules);
 
 	$scope.$watch('cur.answer', function() {
-		if(typeof $scope.cur !== 'undefined')
-			$scope.applyRulesByQuestion($scope.cur);
+		$timeout(function() {
+			if(typeof $scope.cur !== 'undefined')
+				$scope.applyRulesByQuestion($scope.cur);
+		})
 	}, true);
 
 	$scope.$digest();
@@ -291,7 +293,7 @@ $scope.wrapAnswer = function(question) {
 
 	$scope.applyRule = function(rule) {
 		var question = $scope.getQuestionByIdent(rule.trigger.ident);
-		if(question.type === 'choices' && question.answer[rule.trigger.answer]) {
+		if(((question.type === 'choices' && question.answer[rule.trigger.answer]) || (question.isAnswered && rule.trigger.answer === null)) && $scope.isValid()) {
 			var target = $scope.getQuestionByIdent(rule.target.ident);
 			// Exclude specific choice.
 			if(typeof rule.target.answer !== 'undefined' && rule.target.answer !== null) {
@@ -305,7 +307,7 @@ $scope.wrapAnswer = function(question) {
 				target = $scope.applyStatus(rule, target);
 			}
 		} 
-		else if(question.answer === rule.trigger.answer) {
+		else if(((question.answer === rule.trigger.answer) || (question.isAnswered && rule.trigger.answer === null)) && $scope.isValid()) {
 			var target = $scope.getQuestionByIdent(rule.target.ident);
 			if(typeof rule.target.answer !== 'undefined' && rule.target.answer !== null) {
 				var option = $scope.getOptionByIdent(target, rule.target.answer);
