@@ -87,7 +87,6 @@ $scope.loadQuestionnaire = function(rawText) {
 		question.isExcluded = question.status === "excluded";
 	});
 
-	$scope.questionnaire.rules = $scope.loadRules($scope.questionnaire);
 	$scope.applyAllRules($scope.questionnaire.rules);
 
 	$scope.$watch('cur.answer', function() {
@@ -285,26 +284,6 @@ $scope.wrapAnswer = function(question) {
 	/* END SUBMISSION */
 
 	/* RULING */
-
-	$scope.loadRules = function(questionnaire) {
-		var rules = [];
-		$scope.questionnaire.rules.forEach(function(rule) {
-			rules.push({
-				'trigger': {
-					'ident': rule.question_ident1,
-					'answer': rule.opt_answer_ident1
-				},
-				'status': rule.new_status,
-				'target': {
-					'ident': rule.question_ident2,
-					'answer': rule.opt_answer_ident2
-				}
-			});
-		});
-
-		return rules;
-	},
-
 	$scope.applyAllRules = function(rules) {
 		rules.forEach(function(rule) {
 			$scope.applyRule(rule);
