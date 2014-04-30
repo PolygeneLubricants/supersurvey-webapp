@@ -41,12 +41,16 @@ app.directive('questionnaire', function() {
 .directive('daterangepicker', function() {
 	return {
 		link: function(scope, elem, attr) {
+			var min = moment.unix(scope.cur.from).format("MM/DD/YYYY");
+			var max = moment.unix(scope.cur.to).format("MM/DD/YYYY");
+			var defaultDate = moment() >= min ? max : min;
 			$(elem).datetimepicker({
 				pickTime: false,
 				// The documentation for datetimepicker does not specify the format, but MM/DD/YYYY works..
 				// Would be awesome to at least throw an error on unreadable date.
-				minDate: moment.unix(scope.cur.from).format("MM/DD/YYYY"),
-				maxDate: moment.unix(scope.cur.to).format("MM/DD/YYYY")
+				minDate: min,
+				maxDate: max,
+				defaultDate: defaultDate
 			});
 			$(elem).datetimepicker().on("change",function(e){
 				scope.$apply(function() {
