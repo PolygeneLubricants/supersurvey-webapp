@@ -17,7 +17,7 @@ app.controller('progressbarCtrl', ['$scope', function($scope) {
 	$scope.getWidth = function(questions) {
 		var count = 0;
 		for (var i = 0 ; i < questions.length ; i++ ) {
-			if (questions[i].status != "excluded") {
+			if (!questions[i].isExcluded) {
 				count++;
 			}
 		};
