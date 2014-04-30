@@ -479,1085 +479,1085 @@
                        { "ident":"5" , "text":"White" } ,
                        { "ident":"6" , "text":"Rainbow" } ] }
     ] ,
-    "rules": [ { "trigger": { "question":"color1" , "answer":5 } , 
+    "rules": [ { "trigger": { "ident":"color1" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color2" , "answer":5 } , 
+               { "trigger": { "ident":"color2" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color3" , "answer":5 } , 
+               { "trigger": { "ident":"color3" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color4" , "answer":5 } , 
+               { "trigger": { "ident":"color4" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color5" , "answer":5 } , 
+               { "trigger": { "ident":"color5" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color6" , "answer":5 } , 
+               { "trigger": { "ident":"color6" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color7" , "answer":5 } , 
+               { "trigger": { "ident":"color7" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color8" , "answer":5 } , 
+               { "trigger": { "ident":"color8" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color9" , "answer":5 } , 
+               { "trigger": { "ident":"color9" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color11" , "answer":5 } , 
+               { "trigger": { "ident":"color11" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color12" , "answer":5 } , 
+               { "trigger": { "ident":"color12" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color13" , "answer":5 } , 
+               { "trigger": { "ident":"color13" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color14" , "answer":5 } , 
+               { "trigger": { "ident":"color14" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color15" , "answer":5 } , 
+               { "trigger": { "ident":"color15" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color16" , "answer":5 } , 
+               { "trigger": { "ident":"color16" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color17" , "answer":5 } , 
+               { "trigger": { "ident":"color17" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color18" , "answer":5 } , 
+               { "trigger": { "ident":"color18" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color19" , "answer":5 } , 
+               { "trigger": { "ident":"color19" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color21" , "answer":5 } , 
+               { "trigger": { "ident":"color21" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color22" , "answer":5 } , 
+               { "trigger": { "ident":"color22" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color23" , "answer":5 } , 
+               { "trigger": { "ident":"color23" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color24" , "answer":5 } , 
+               { "trigger": { "ident":"color24" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color25" , "answer":5 } , 
+               { "trigger": { "ident":"color25" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color26" , "answer":5 } , 
+               { "trigger": { "ident":"color26" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color27" , "answer":5 } , 
+               { "trigger": { "ident":"color27" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color28" , "answer":5 } , 
+               { "trigger": { "ident":"color28" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color29" , "answer":5 } , 
+               { "trigger": { "ident":"color29" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color31" , "answer":5 } , 
+               { "trigger": { "ident":"color31" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color32" , "answer":5 } , 
+               { "trigger": { "ident":"color32" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color33" , "answer":5 } , 
+               { "trigger": { "ident":"color33" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color34" , "answer":5 } , 
+               { "trigger": { "ident":"color34" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color35" , "answer":5 } , 
+               { "trigger": { "ident":"color35" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color36" , "answer":5 } , 
+               { "trigger": { "ident":"color36" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color37" , "answer":5 } , 
+               { "trigger": { "ident":"color37" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color38" , "answer":5 } , 
+               { "trigger": { "ident":"color38" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color39" , "answer":5 } , 
+               { "trigger": { "ident":"color39" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color41" , "answer":5 } , 
+               { "trigger": { "ident":"color41" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color42" , "answer":5 } , 
+               { "trigger": { "ident":"color42" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color43" , "answer":5 } , 
+               { "trigger": { "ident":"color43" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color44" , "answer":5 } , 
+               { "trigger": { "ident":"color44" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color45" , "answer":5 } , 
+               { "trigger": { "ident":"color45" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color46" , "answer":5 } , 
+               { "trigger": { "ident":"color46" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color47" , "answer":5 } , 
+               { "trigger": { "ident":"color47" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color48" , "answer":5 } , 
+               { "trigger": { "ident":"color48" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color49" , "answer":5 } , 
+               { "trigger": { "ident":"color49" , "answer":5 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color2" , "answer":null }
+                 "target":  { "ident":"color2" , "answer":null }
                } ,
-               { "trigger": { "question":"color1" , "answer":3 } , 
+               { "trigger": { "ident":"color1" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color2" , "answer":3 } , 
+               { "trigger": { "ident":"color2" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color3" , "answer":3 } , 
+               { "trigger": { "ident":"color3" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color4" , "answer":3 } , 
+               { "trigger": { "ident":"color4" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color5" , "answer":3 } , 
+               { "trigger": { "ident":"color5" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color6" , "answer":3 } , 
+               { "trigger": { "ident":"color6" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color7" , "answer":3 } , 
+               { "trigger": { "ident":"color7" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color8" , "answer":3 } , 
+               { "trigger": { "ident":"color8" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color9" , "answer":3 } , 
+               { "trigger": { "ident":"color9" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color11" , "answer":3 } , 
+               { "trigger": { "ident":"color11" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color12" , "answer":3 } , 
+               { "trigger": { "ident":"color12" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color13" , "answer":3 } , 
+               { "trigger": { "ident":"color13" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color14" , "answer":3 } , 
+               { "trigger": { "ident":"color14" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color15" , "answer":3 } , 
+               { "trigger": { "ident":"color15" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color16" , "answer":3 } , 
+               { "trigger": { "ident":"color16" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color17" , "answer":3 } , 
+               { "trigger": { "ident":"color17" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color18" , "answer":3 } , 
+               { "trigger": { "ident":"color18" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color19" , "answer":3 } , 
+               { "trigger": { "ident":"color19" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color21" , "answer":3 } , 
+               { "trigger": { "ident":"color21" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color22" , "answer":3 } , 
+               { "trigger": { "ident":"color22" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color23" , "answer":3 } , 
+               { "trigger": { "ident":"color23" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color24" , "answer":3 } , 
+               { "trigger": { "ident":"color24" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color25" , "answer":3 } , 
+               { "trigger": { "ident":"color25" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color26" , "answer":3 } , 
+               { "trigger": { "ident":"color26" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color27" , "answer":3 } , 
+               { "trigger": { "ident":"color27" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color28" , "answer":3 } , 
+               { "trigger": { "ident":"color28" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color29" , "answer":3 } , 
+               { "trigger": { "ident":"color29" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color31" , "answer":3 } , 
+               { "trigger": { "ident":"color31" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color32" , "answer":3 } , 
+               { "trigger": { "ident":"color32" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color33" , "answer":3 } , 
+               { "trigger": { "ident":"color33" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color34" , "answer":3 } , 
+               { "trigger": { "ident":"color34" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color35" , "answer":3 } , 
+               { "trigger": { "ident":"color35" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color36" , "answer":3 } , 
+               { "trigger": { "ident":"color36" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color37" , "answer":3 } , 
+               { "trigger": { "ident":"color37" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color38" , "answer":3 } , 
+               { "trigger": { "ident":"color38" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color39" , "answer":3 } , 
+               { "trigger": { "ident":"color39" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color41" , "answer":3 } , 
+               { "trigger": { "ident":"color41" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color42" , "answer":3 } , 
+               { "trigger": { "ident":"color42" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color43" , "answer":3 } , 
+               { "trigger": { "ident":"color43" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color44" , "answer":3 } , 
+               { "trigger": { "ident":"color44" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color45" , "answer":3 } , 
+               { "trigger": { "ident":"color45" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color46" , "answer":3 } , 
+               { "trigger": { "ident":"color46" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color47" , "answer":3 } , 
+               { "trigger": { "ident":"color47" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color48" , "answer":3 } , 
+               { "trigger": { "ident":"color48" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color49" , "answer":3 } , 
+               { "trigger": { "ident":"color49" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color4" , "answer":5 }
+                 "target":  { "ident":"color4" , "answer":5 }
                } ,
-               { "trigger": { "question":"color1" , "answer":3 } , 
+               { "trigger": { "ident":"color1" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color2" , "answer":3 } , 
+               { "trigger": { "ident":"color2" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color3" , "answer":3 } , 
+               { "trigger": { "ident":"color3" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color4" , "answer":3 } , 
+               { "trigger": { "ident":"color4" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color5" , "answer":3 } , 
+               { "trigger": { "ident":"color5" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color6" , "answer":3 } , 
+               { "trigger": { "ident":"color6" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color7" , "answer":3 } , 
+               { "trigger": { "ident":"color7" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color8" , "answer":3 } , 
+               { "trigger": { "ident":"color8" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color9" , "answer":3 } , 
+               { "trigger": { "ident":"color9" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color11" , "answer":3 } , 
+               { "trigger": { "ident":"color11" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color12" , "answer":3 } , 
+               { "trigger": { "ident":"color12" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color13" , "answer":3 } , 
+               { "trigger": { "ident":"color13" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color14" , "answer":3 } , 
+               { "trigger": { "ident":"color14" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color15" , "answer":3 } , 
+               { "trigger": { "ident":"color15" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color16" , "answer":3 } , 
+               { "trigger": { "ident":"color16" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color17" , "answer":3 } , 
+               { "trigger": { "ident":"color17" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color18" , "answer":3 } , 
+               { "trigger": { "ident":"color18" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color19" , "answer":3 } , 
+               { "trigger": { "ident":"color19" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color21" , "answer":3 } , 
+               { "trigger": { "ident":"color21" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color22" , "answer":3 } , 
+               { "trigger": { "ident":"color22" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color23" , "answer":3 } , 
+               { "trigger": { "ident":"color23" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color24" , "answer":3 } , 
+               { "trigger": { "ident":"color24" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color25" , "answer":3 } , 
+               { "trigger": { "ident":"color25" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color26" , "answer":3 } , 
+               { "trigger": { "ident":"color26" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color27" , "answer":3 } , 
+               { "trigger": { "ident":"color27" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color28" , "answer":3 } , 
+               { "trigger": { "ident":"color28" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color29" , "answer":3 } , 
+               { "trigger": { "ident":"color29" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color31" , "answer":3 } , 
+               { "trigger": { "ident":"color31" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color32" , "answer":3 } , 
+               { "trigger": { "ident":"color32" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color33" , "answer":3 } , 
+               { "trigger": { "ident":"color33" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color34" , "answer":3 } , 
+               { "trigger": { "ident":"color34" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color35" , "answer":3 } , 
+               { "trigger": { "ident":"color35" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color36" , "answer":3 } , 
+               { "trigger": { "ident":"color36" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color37" , "answer":3 } , 
+               { "trigger": { "ident":"color37" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color38" , "answer":3 } , 
+               { "trigger": { "ident":"color38" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color39" , "answer":3 } , 
+               { "trigger": { "ident":"color39" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color41" , "answer":3 } , 
+               { "trigger": { "ident":"color41" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color42" , "answer":3 } , 
+               { "trigger": { "ident":"color42" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color43" , "answer":3 } , 
+               { "trigger": { "ident":"color43" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color44" , "answer":3 } , 
+               { "trigger": { "ident":"color44" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color45" , "answer":3 } , 
+               { "trigger": { "ident":"color45" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color46" , "answer":3 } , 
+               { "trigger": { "ident":"color46" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color47" , "answer":3 } , 
+               { "trigger": { "ident":"color47" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color48" , "answer":3 } , 
+               { "trigger": { "ident":"color48" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color49" , "answer":3 } , 
+               { "trigger": { "ident":"color49" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color6" , "answer":null }
+                 "target":  { "ident":"color6" , "answer":null }
                } ,
-               { "trigger": { "question":"color1" , "answer":3 } , 
+               { "trigger": { "ident":"color1" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color2" , "answer":3 } , 
+               { "trigger": { "ident":"color2" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color3" , "answer":3 } , 
+               { "trigger": { "ident":"color3" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color4" , "answer":3 } , 
+               { "trigger": { "ident":"color4" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color5" , "answer":3 } , 
+               { "trigger": { "ident":"color5" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color6" , "answer":3 } , 
+               { "trigger": { "ident":"color6" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color7" , "answer":3 } , 
+               { "trigger": { "ident":"color7" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color8" , "answer":3 } , 
+               { "trigger": { "ident":"color8" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color9" , "answer":3 } , 
+               { "trigger": { "ident":"color9" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color11" , "answer":3 } , 
+               { "trigger": { "ident":"color11" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color12" , "answer":3 } , 
+               { "trigger": { "ident":"color12" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color13" , "answer":3 } , 
+               { "trigger": { "ident":"color13" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color14" , "answer":3 } , 
+               { "trigger": { "ident":"color14" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color15" , "answer":3 } , 
+               { "trigger": { "ident":"color15" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color16" , "answer":3 } , 
+               { "trigger": { "ident":"color16" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color17" , "answer":3 } , 
+               { "trigger": { "ident":"color17" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color18" , "answer":3 } , 
+               { "trigger": { "ident":"color18" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color19" , "answer":3 } , 
+               { "trigger": { "ident":"color19" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color21" , "answer":3 } , 
+               { "trigger": { "ident":"color21" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color22" , "answer":3 } , 
+               { "trigger": { "ident":"color22" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color23" , "answer":3 } , 
+               { "trigger": { "ident":"color23" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color24" , "answer":3 } , 
+               { "trigger": { "ident":"color24" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color25" , "answer":3 } , 
+               { "trigger": { "ident":"color25" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color26" , "answer":3 } , 
+               { "trigger": { "ident":"color26" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color27" , "answer":3 } , 
+               { "trigger": { "ident":"color27" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color28" , "answer":3 } , 
+               { "trigger": { "ident":"color28" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color29" , "answer":3 } , 
+               { "trigger": { "ident":"color29" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color31" , "answer":3 } , 
+               { "trigger": { "ident":"color31" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color32" , "answer":3 } , 
+               { "trigger": { "ident":"color32" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color33" , "answer":3 } , 
+               { "trigger": { "ident":"color33" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color34" , "answer":3 } , 
+               { "trigger": { "ident":"color34" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color35" , "answer":3 } , 
+               { "trigger": { "ident":"color35" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color36" , "answer":3 } , 
+               { "trigger": { "ident":"color36" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color37" , "answer":3 } , 
+               { "trigger": { "ident":"color37" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color38" , "answer":3 } , 
+               { "trigger": { "ident":"color38" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color39" , "answer":3 } , 
+               { "trigger": { "ident":"color39" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color41" , "answer":3 } , 
+               { "trigger": { "ident":"color41" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color42" , "answer":3 } , 
+               { "trigger": { "ident":"color42" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color43" , "answer":3 } , 
+               { "trigger": { "ident":"color43" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color44" , "answer":3 } , 
+               { "trigger": { "ident":"color44" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color45" , "answer":3 } , 
+               { "trigger": { "ident":"color45" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color46" , "answer":3 } , 
+               { "trigger": { "ident":"color46" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color47" , "answer":3 } , 
+               { "trigger": { "ident":"color47" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color48" , "answer":3 } , 
+               { "trigger": { "ident":"color48" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color49" , "answer":3 } , 
+               { "trigger": { "ident":"color49" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color3" , "answer":null }
+                 "target":  { "ident":"color3" , "answer":null }
                } ,
-               { "trigger": { "question":"color1" , "answer":3 } , 
+               { "trigger": { "ident":"color1" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color2" , "answer":3 } , 
+               { "trigger": { "ident":"color2" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color3" , "answer":3 } , 
+               { "trigger": { "ident":"color3" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color4" , "answer":3 } , 
+               { "trigger": { "ident":"color4" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color5" , "answer":3 } , 
+               { "trigger": { "ident":"color5" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color6" , "answer":3 } , 
+               { "trigger": { "ident":"color6" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color7" , "answer":3 } , 
+               { "trigger": { "ident":"color7" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color8" , "answer":3 } , 
+               { "trigger": { "ident":"color8" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color9" , "answer":3 } , 
+               { "trigger": { "ident":"color9" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color11" , "answer":3 } , 
+               { "trigger": { "ident":"color11" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color12" , "answer":3 } , 
+               { "trigger": { "ident":"color12" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color13" , "answer":3 } , 
+               { "trigger": { "ident":"color13" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color14" , "answer":3 } , 
+               { "trigger": { "ident":"color14" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color15" , "answer":3 } , 
+               { "trigger": { "ident":"color15" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color16" , "answer":3 } , 
+               { "trigger": { "ident":"color16" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color17" , "answer":3 } , 
+               { "trigger": { "ident":"color17" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color18" , "answer":3 } , 
+               { "trigger": { "ident":"color18" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color19" , "answer":3 } , 
+               { "trigger": { "ident":"color19" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color21" , "answer":3 } , 
+               { "trigger": { "ident":"color21" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color22" , "answer":3 } , 
+               { "trigger": { "ident":"color22" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color23" , "answer":3 } , 
+               { "trigger": { "ident":"color23" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color24" , "answer":3 } , 
+               { "trigger": { "ident":"color24" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color25" , "answer":3 } , 
+               { "trigger": { "ident":"color25" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color26" , "answer":3 } , 
+               { "trigger": { "ident":"color26" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color27" , "answer":3 } , 
+               { "trigger": { "ident":"color27" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color28" , "answer":3 } , 
+               { "trigger": { "ident":"color28" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color29" , "answer":3 } , 
+               { "trigger": { "ident":"color29" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color31" , "answer":3 } , 
+               { "trigger": { "ident":"color31" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color32" , "answer":3 } , 
+               { "trigger": { "ident":"color32" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color33" , "answer":3 } , 
+               { "trigger": { "ident":"color33" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color34" , "answer":3 } , 
+               { "trigger": { "ident":"color34" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color35" , "answer":3 } , 
+               { "trigger": { "ident":"color35" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color36" , "answer":3 } , 
+               { "trigger": { "ident":"color36" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color37" , "answer":3 } , 
+               { "trigger": { "ident":"color37" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color38" , "answer":3 } , 
+               { "trigger": { "ident":"color38" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color39" , "answer":3 } , 
+               { "trigger": { "ident":"color39" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color41" , "answer":3 } , 
+               { "trigger": { "ident":"color41" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color42" , "answer":3 } , 
+               { "trigger": { "ident":"color42" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color43" , "answer":3 } , 
+               { "trigger": { "ident":"color43" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color44" , "answer":3 } , 
+               { "trigger": { "ident":"color44" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color45" , "answer":3 } , 
+               { "trigger": { "ident":"color45" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color46" , "answer":3 } , 
+               { "trigger": { "ident":"color46" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color47" , "answer":3 } , 
+               { "trigger": { "ident":"color47" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color48" , "answer":3 } , 
+               { "trigger": { "ident":"color48" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color49" , "answer":3 } , 
+               { "trigger": { "ident":"color49" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color5" , "answer":null }
+                 "target":  { "ident":"color5" , "answer":null }
                } ,
-               { "trigger": { "question":"color1" , "answer":3 } , 
+               { "trigger": { "ident":"color1" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color2" , "answer":3 } , 
+               { "trigger": { "ident":"color2" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color3" , "answer":3 } , 
+               { "trigger": { "ident":"color3" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color4" , "answer":3 } , 
+               { "trigger": { "ident":"color4" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color5" , "answer":3 } , 
+               { "trigger": { "ident":"color5" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color6" , "answer":3 } , 
+               { "trigger": { "ident":"color6" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color7" , "answer":3 } , 
+               { "trigger": { "ident":"color7" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color8" , "answer":3 } , 
+               { "trigger": { "ident":"color8" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color9" , "answer":3 } , 
+               { "trigger": { "ident":"color9" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color11" , "answer":3 } , 
+               { "trigger": { "ident":"color11" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color12" , "answer":3 } , 
+               { "trigger": { "ident":"color12" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color13" , "answer":3 } , 
+               { "trigger": { "ident":"color13" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color14" , "answer":3 } , 
+               { "trigger": { "ident":"color14" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color15" , "answer":3 } , 
+               { "trigger": { "ident":"color15" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color16" , "answer":3 } , 
+               { "trigger": { "ident":"color16" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color17" , "answer":3 } , 
+               { "trigger": { "ident":"color17" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color18" , "answer":3 } , 
+               { "trigger": { "ident":"color18" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color19" , "answer":3 } , 
+               { "trigger": { "ident":"color19" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color21" , "answer":3 } , 
+               { "trigger": { "ident":"color21" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color22" , "answer":3 } , 
+               { "trigger": { "ident":"color22" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color23" , "answer":3 } , 
+               { "trigger": { "ident":"color23" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color24" , "answer":3 } , 
+               { "trigger": { "ident":"color24" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color25" , "answer":3 } , 
+               { "trigger": { "ident":"color25" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color26" , "answer":3 } , 
+               { "trigger": { "ident":"color26" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color27" , "answer":3 } , 
+               { "trigger": { "ident":"color27" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color28" , "answer":3 } , 
+               { "trigger": { "ident":"color28" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color29" , "answer":3 } , 
+               { "trigger": { "ident":"color29" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color31" , "answer":3 } , 
+               { "trigger": { "ident":"color31" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color32" , "answer":3 } , 
+               { "trigger": { "ident":"color32" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color33" , "answer":3 } , 
+               { "trigger": { "ident":"color33" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color34" , "answer":3 } , 
+               { "trigger": { "ident":"color34" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color35" , "answer":3 } , 
+               { "trigger": { "ident":"color35" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color36" , "answer":3 } , 
+               { "trigger": { "ident":"color36" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color37" , "answer":3 } , 
+               { "trigger": { "ident":"color37" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color38" , "answer":3 } , 
+               { "trigger": { "ident":"color38" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color39" , "answer":3 } , 
+               { "trigger": { "ident":"color39" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color41" , "answer":3 } , 
+               { "trigger": { "ident":"color41" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color42" , "answer":3 } , 
+               { "trigger": { "ident":"color42" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color43" , "answer":3 } , 
+               { "trigger": { "ident":"color43" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color44" , "answer":3 } , 
+               { "trigger": { "ident":"color44" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color45" , "answer":3 } , 
+               { "trigger": { "ident":"color45" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color46" , "answer":3 } , 
+               { "trigger": { "ident":"color46" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color47" , "answer":3 } , 
+               { "trigger": { "ident":"color47" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color48" , "answer":3 } , 
+               { "trigger": { "ident":"color48" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                } ,
-               { "trigger": { "question":"color49" , "answer":3 } , 
+               { "trigger": { "ident":"color49" , "answer":3 } , 
                  "status":"excluded" ,
-                 "target":  { "question":"color1" , "answer":4 }
+                 "target":  { "ident":"color1" , "answer":4 }
                }
     ]
 }
