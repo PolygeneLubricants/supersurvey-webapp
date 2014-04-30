@@ -8,6 +8,7 @@
     "grunt": "~0.4.2",
     "grunt-contrib-copy": ">=0.5.0",
     "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-concat": "~0.3.0"
+    "grunt-contrib-concat": "~0.3.0",
+	"grunt-html-smoosher":"0.4.1"
   }
 }

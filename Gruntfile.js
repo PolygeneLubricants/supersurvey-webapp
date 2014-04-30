@@ -37,7 +37,20 @@ module.exports = function(grunt){
      				src: ['build/js/app/views/**/*.html'],
      				dest: 'build/tmp/templates.js'
      			},
-     		}
+     		},
+			smoosher: {
+				options: {
+				  jsTags: { // optional
+					start: '<script type="text/javascript">', // default: <script>
+					end: '</script>'                          // default: </script>
+				  }
+				},
+				all: {
+				  files: {
+					'build/index.html': 'index.html',
+				  },
+				}
+			}
      	});
 
 	//Load the plugins
@@ -45,9 +58,10 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-html-smoosher');
 
 	//Default task(s).
-	grunt.registerTask('default', ['copy', 'html2js', 'concat']);
+	grunt.registerTask('default', ['copy', 'html2js', 'concat', 'smoosher']);
 	//other tasks
 	grunt.registerTask('jslint', ['jshint']);
 };
