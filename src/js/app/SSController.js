@@ -107,7 +107,7 @@ $scope.questionnaireIsReady = function() {
 $scope.nextQuestion = function() {
 	var nextId;
 	for(var i = 0; i < $scope.questionnaire.questions.length; i++) {
-		if($scope.questionnaire.questions[i].isAnswered == false) {
+		if($scope.questionnaire.questions[i].isAnswered == false && $scope.questionnaire.questions[i].isSkipped == false) {
 			nextId = i;
 			break;
 		}
