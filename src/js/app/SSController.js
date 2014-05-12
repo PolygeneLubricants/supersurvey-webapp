@@ -33,73 +33,22 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 		});
 	});
 
-this.init = function() {
-	if(typeof $scope.questionnaire === 'undefined')
-		return $state.go('entryPoint');
-
-	$scope.cur;
-};
-
-this.init();
-
 /* SCOPE */
+$scope.safeApply = function(fn) {
+  var phase = this.$root.$$phase;
+  if(phase == '$apply' || phase == '$digest') {
+    if(fn && (typeof(fn) === 'function')) {
+      fn();
+    }
+  } else {
+    this.$apply(fn);
+  }
+},
+
 $scope.getQuestion = function(id) {
 	return $scope.questionnaire.questions[id];
 },
-$scope.loadQuestionnaire = function(rawText) {
-	$scope.questionnaire = JSON.parse(rawText);
-	var i = 0;
-	$scope.questionnaire.questions.forEach(function(question) {
-		function getAnswerType(type) {
-			switch(type.toLowerCase()) {
-				case "choices":
-				return {};
-				case "date":
-				return "";
-				case "daterange":
-				return "";
-				case "range":
-				return "";
-				case "text":
-				return "";
-				case "time":
-				return "";
-				default:
-				throw "Type not supported. " + type;
-			}
-		}
-		question.Id = i;
-		i++;
-		question.answer = getAnswerType(question.type);
 
-		if(question.type === "choices") {
-			question.options.forEach(function(option) {
-				if(typeof option.status !== 'undefined' && option.status === 'excluded') {
-					option.isExcluded = true;
-				}
-				else {
-					option.isExcluded = false;
-				}
-			});
-		}
-		question.isAnswered = false;
-		question.isSkipped = false;
-		question.isExcluded = question.status === "excluded";
-	});
-
-	$scope.applyAllRules($scope.questionnaire.rules);
-
-	$scope.$watch('cur.answer', function() {
-		$timeout(function() {
-			if(typeof $scope.cur === 'undefined')
-				return;
-
-			$scope.applyRulesByQuestion($scope.cur);
-		});
-	}, true);
-
-	$scope.$digest();
-},
 $scope.questionnaireIsReady = function() {
 	return typeof $scope.questionnaire !== 'undefined';
 },
@@ -380,6 +329,80 @@ $scope.wrapAnswer = function(question) {
 			throw "Option not found. Option: " + ident;
 
 		return option;
-	}
+	},
 	/* END RULING */
+
+	$scope.loadQuestionnaire = function(json) {
+		if(typeof json === 'object') {
+			$scope.questionnaire = json;
+		}
+		else {
+			$scope.questionnaire = JSON.parse(json);
+		}
+
+		var i = 0;
+		$scope.questionnaire.questions.forEach(function(question) {
+			function getAnswerType(type) {
+				switch(type.toLowerCase()) {
+					case "choices":
+					return {};
+					case "date":
+					return "";
+					case "daterange":
+					return "";
+					case "range":
+					return "";
+					case "text":
+					return "";
+					case "time":
+					return "";
+					default:
+					throw "Type not supported. " + type;
+				}
+			}
+			question.Id = i;
+			i++;
+			question.answer = getAnswerType(question.type);
+
+			if(question.type === "choices") {
+				question.options.forEach(function(option) {
+					if(typeof option.status !== 'undefined' && option.status === 'excluded') {
+						option.isExcluded = true;
+					}
+					else {
+						option.isExcluded = false;
+					}
+				});
+			}
+			question.isAnswered = false;
+			question.isSkipped = false;
+			question.isExcluded = question.status === "excluded";
+		});
+
+		$scope.applyAllRules($scope.questionnaire.rules);
+
+		$scope.$watch('cur.answer', function() {
+			$timeout(function() {
+				if(typeof $scope.cur === 'undefined')
+					return;
+
+				$scope.applyRulesByQuestion($scope.cur);
+			});
+		}, true);
+
+		$scope.safeApply();
+	},
+
+	this.init = function() {
+		if(GLOBAL_QUESTIONNAIRE !== null) {
+			$scope.loadQuestionnaire(GLOBAL_QUESTIONNAIRE);
+		}
+
+		if(typeof $scope.questionnaire === 'undefined')
+			return $state.go('entryPoint');
+
+		$scope.cur;
+	};
+
+	this.init();
 }]);
