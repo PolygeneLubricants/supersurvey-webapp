@@ -1,5 +1,6 @@
 ﻿{ 
     "title":"myQuestionnaire" ,
+	"introduction": "The Introduction is different to the Summary that comes at the end of the report. It is much briefer (2-5 sentences) and is designed to set the scene for your reader. In it, you will establish the current presenting complaint and emphasise likely causal elements. You may specify a diagnosis, especially if this is relevant to the presenting complaint and is established prior to the current presentation or is known at the time you conduct the interview with the patient. It is less likely to include data from sections other than the history of the presenting complaint (and past psychiatric history where relevant).",
     "questions": [ 
         { "ident":"birthday" , "status":"required" , "text":"When is your next birthday?" , 
           "type":"date" } ,

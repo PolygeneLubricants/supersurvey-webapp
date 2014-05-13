@@ -1,4 +1,7 @@
 <div class="questionnaire" ng-init="loadQuestionnaireFromFile()">
+	<div class="introduction">
+		<p>{{questionnaire.introduction}}</p>
+	</div>
 	<span class="btn btn-default btn-file" ng-hide="questionnaireIsReady()">
 	Choose your questionnaire <input type="file" filelist-bind name="files"/>
 	</span>
