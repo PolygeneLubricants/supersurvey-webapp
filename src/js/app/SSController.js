@@ -1,6 +1,7 @@
-app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout', '$state', '$window', function($rootScope, $scope, $stateParams, $timeout, $state, $window) {
+app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout', '$state', '$window', '$http', 
+	function(  $rootScope,   $scope,   $stateParams,   $timeout,   $state,   $window,   $http) {
 
-	$scope.$on('$locationChangeSuccess', function(evt) {
+		$scope.$on('$locationChangeSuccess', function(evt) {
 
 		// Remove zombie divs from DTP. Fucking leaky ass bootstrap datetime picker.
 		$('.bootstrap-datetimepicker-widget.dropdown-menu').remove();
@@ -35,14 +36,14 @@ app.controller('surveyCtrl', ['$rootScope', '$scope', '$stateParams', '$timeout'
 
 /* SCOPE */
 $scope.safeApply = function(fn) {
-  var phase = this.$root.$$phase;
-  if(phase == '$apply' || phase == '$digest') {
-    if(fn && (typeof(fn) === 'function')) {
-      fn();
-    }
-  } else {
-    this.$apply(fn);
-  }
+	var phase = this.$root.$$phase;
+	if(phase == '$apply' || phase == '$digest') {
+		if(fn && (typeof(fn) === 'function')) {
+			fn();
+		}
+	} else {
+		this.$apply(fn);
+	}
 },
 
 $scope.getQuestion = function(id) {
@@ -396,6 +397,13 @@ $scope.wrapAnswer = function(question) {
 	this.init = function() {
 		if(GLOBAL_QUESTIONNAIRE !== null) {
 			$scope.loadQuestionnaire(GLOBAL_QUESTIONNAIRE);
+		}
+		else if(document.URL.indexOf('file://') === -1) {
+			$http.get(config.JSON_URL).success(function(data, status, headers, config) {
+				$scope.loadQuestionnaire(data);
+			}).error(function(data, status, headers, config) {
+				// 404, continue with file-find.
+			});
 		}
 
 		if(typeof $scope.questionnaire === 'undefined')

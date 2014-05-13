@@ -61,7 +61,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-html-smoosher');
 
 	//Default task(s).
-	grunt.registerTask('default', ['copy', 'html2js', 'concat']);
+	grunt.registerTask('default', ['copy', 'concat']);
 	
 	// Create index (Time consuming. Takes about 30 seconds)
 	grunt.registerTask('purehtml', ['copy', 'html2js', 'concat', 'smoosher']);
